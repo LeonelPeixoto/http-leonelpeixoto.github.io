@@ -5,13 +5,38 @@
 <html>
 	<head>
 		<title>Leonel Peixoto - Personal Page</title>
+		
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="GitHub personal page">
+		<meta name="keywords" content="leonel, peixoto, personal, page, github, git, software, engineer, developer">
+		<meta name="author" content="Leonel Peixoto">
+		
+		<link rel="shortcut icon" type="image/png" href="favicon.png">
+		<link rel="icon" type="image/png" href="favicon.png">
+		<link rel="apple-touch-icon" type="image/png" href="favicon.png">
+		<link rel="image_src" type="image/png" href="favicon.png">
+		<link rel="canonical" href="https://leonelpeixoto.github.io">
+		
+		<meta property="og:image" content="https://leonelpeixoto.github.io/favicon-192x192.png">
+		<meta property="og:url" content="https://leonelpeixoto.github.io">
+		<meta property="og:type" content="website">
+		<meta property="og:title" content="Leonel Peixoto - Personal Page">
+		<meta property="og:site_name" content="Leonel Peixoto - Personal Page">
+		<meta property="og:description" content="Leonel Peixoto - GitHub Personal Page">
+		
+		<meta itemprop="thumbnailUrl" content="https://leonelpeixoto.github.io/favicon-192x192.png">
+		<meta itemprop="image" content="https://leonelpeixoto.github.io/favicon-192x192.png">
+		<meta itemprop="name" content="Leonel Peixoto - Personal Page">
+		<meta itemprop="url" content="Leonel Peixoto - Personal Page">
+		<meta itemprop="description" content="Leonel Peixoto - GitHub Personal Page">
+		
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet" href="assets/css/typed.css">
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
-		<script src="assets/js/send_mail.js"></script>
 	</head>
+	
 	<body id="top">
 
 		<!-- Header -->
@@ -19,16 +44,17 @@
 				<div class="inner">
 					<a href="#" class="image avatar"><img src="images/avatar.jpg" alt="" /></a>
 					<h1><strong>Leonel Peixoto</strong><br/>
-					Software Engineer & Developer<br/>
+					<div><span class="typed_element">Software</span><span class="typed-cursor">|</span>Engineer & Developer</div>
 					</h1>
 				</div>
 				<ul class="actions">
 					<li><a href="#AboutMe" >About me</a></li>
+					<li><a href="#Works" >Works</a></li>
 					<li><a href="#CurriculumVitae" >Curriculum Vitae</a></li>
 					<li><a href="#Contacts" >Contacts</a></li>
 				</ul>
 				<ul class="actions">
-					<!-- <li><a href="./profile_pt.html">Pt</a></li> -->
+					<li><a href="./profile_pt.html">Pt</a></li>
 					<li>En</a></li>
 				</ul>
 			</header>
@@ -51,6 +77,7 @@
 						<br /><br /><br />
 						<ul class="actions">
 							<li><a href="#AboutMe" class="button">About me</a></li>
+							<li><a href="#Works" class="button">Works</a></li>
 							<li><a href="#CurriculumVitae" class="button">Curriculum Vitae</a></li>
 							<li><a href="#Contacts" class="button">Contacts</a></li>
 						</ul>
@@ -61,14 +88,14 @@
 						<h2>My areas of interest</h2>
 						<div class="row">
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/thumbs/graphics.jpg" class="image fit thumb">Computer graphics<img src="images/thumbs/graphics.jpg" alt="" /></a>
+								<a class="image fit thumb">Computer graphics<img src="images/thumbs/graphics.jpg" alt="" /></a>
 								<h4>Computer graphics</h4>
 								<p>- Rendering</p>
 								<p>- Shape modeling</p>
 								<p>- Animation</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/thumbs/game-dev.jpg" class="image fit thumb">Game development<img src="images/thumbs/game-dev.jpg" alt="" /></a>
+								<a class="image fit thumb">Game development<img src="images/thumbs/game-dev.jpg" alt="" /></a>
 								<h4>Game development</h4>
 								<p>- Game logic</p>
 								<p>- Mechanics</p>
@@ -76,51 +103,51 @@
 								<p>- Scene environment</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/thumbs/vr.jpg" class="image fit thumb">Cross Reality<img src="images/thumbs/vr.jpg" alt="" /></a>
+								<a class="image fit thumb">Cross Reality<img src="images/thumbs/vr.jpg" alt="" /></a>
 								<h4>Cross Reality</h4>
 								<p>- Virtual Reality</p>
 								<p>- Augmented Reality</p>
 								<p>- Mixed Reality</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/thumbs/coding.jpg" class="image fit thumb">Programming<img src="images/thumbs/coding.jpg" alt="" /></a>
+								<a class="image fit thumb">Programming<img src="images/thumbs/coding.jpg" alt="" /></a>
 								<h4>Programming</h4>
 								<p>- Software architecture</p>
 								<p>- Algorithm development</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/thumbs/networks.jpg" class="image fit thumb">Networks<img src="images/thumbs/networks.jpg" alt="" /></a>
+								<a class="image fit thumb">Networks<img src="images/thumbs/networks.jpg" alt="" /></a>
 								<h4>Networks</h4>
 								<p>- Network architectures</p>
 								<p>- Network services</p>
 								<p>- IoT</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/thumbs/parallel.jpg" class="image fit thumb">Distributed computing<img src="images/thumbs/parallel.jpg" alt="" /></a>
+								<a class="image fit thumb">Distributed computing<img src="images/thumbs/parallel.jpg" alt="" /></a>
 								<h3>Distributed computing</h3>
 								<p>- Parallel computing</p>
 								<p>- Distributed computing methodologies</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/thumbs/architecture.jpg" class="image fit thumb">Computer systems organization<img src="images/thumbs/architecture.jpg" alt="" /></a>
+								<a class="image fit thumb">Computer systems organization<img src="images/thumbs/architecture.jpg" alt="" /></a>
 								<h4>Computer systems organization</h4>
 								<p>- Architectures</p>
 								<p>- Real-time systems</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/thumbs/vision.jpg" class="image fit thumb">Artificial intelligence<img src="images/thumbs/vision.jpg" alt="" /></a>
+								<a class="image fit thumb">Artificial intelligence<img src="images/thumbs/vision.jpg" alt="" /></a>
 								<h4>Artificial intelligence</h4>
 								<p>- Computer vision</p>
 								<p>- Image processing</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/thumbs/mobile.jpg" class="image fit thumb">Human-centered computing<img src="images/thumbs/mobile.jpg" alt="" /></a>
+								<a class="image fit thumb">Human-centered computing<img src="images/thumbs/mobile.jpg" alt="" /></a>
 								<h4>Human-centered computing</h4>
 								<p>- Ubiquitous computing</p>
 								<p>- Mobile computing</p>
 							</article>
 							<article class="6u$ 12u$(xsmall) work-item">
-								<a href="images/thumbs/ccbi.jpg" class="image fit thumb">Applied computing<img src="images/thumbs/ccbi.jpg" alt="" /></a>
+								<a class="image fit thumb">Applied computing<img src="images/thumbs/ccbi.jpg" alt="" /></a>
 								<h4>Applied computing</h4>
 								<h3>Life and medical sciences</h3>
 								<p>- Computational biology</p>
@@ -131,7 +158,7 @@
 								<p>- Chemistry</p>
 							</article>
 							<article class="6u 12u$(xsmall) work-item">
-								<a href="images/thumbs/electronic.jpg" class="image fit thumb">Electronics<img src="images/thumbs/electronic.jpg" alt="" /></a>
+								<a class="image fit thumb">Electronics<img src="images/thumbs/electronic.jpg" alt="" /></a>
 								<h4>Electronics</h4>
 								<p>- Circuit design</p>
 								<p>- Microcontrollers programming</p>
@@ -143,6 +170,14 @@
 								<p>- Chemistry</p>
 							</article>
 						</div>
+					</section>
+				
+				<!-- Works -->
+					<section id="Works">
+						<h2>Some of my Works</h2>
+						<div class="row">
+						</div>
+						
 					</section>
 				
 				<!-- CurriculumVitae -->
@@ -220,7 +255,18 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
+			<script src="assets/js/typed.js"></script>
+			<script>
+				$(function(){
+					$(".typed_element").typed({
+						strings: ["Software", "Web", "Game"],
+						typeSpeed: 150,
+						loop: true
+					});
+				});
+			</script>
 
 	</body>
 </html>
