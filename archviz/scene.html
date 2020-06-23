@@ -1,0 +1,182 @@
+<a-scene>
+	<a-assets>
+		<a-mixin
+			id="hotspot-text"
+			text="font: ./fonts/Roboto-msdf.json; fontImage: ./fonts/Roboto-msdf.png; width: 0.1"
+			geometry="primitive: plane; width: 0.01; height: 0.01"
+			material="color: rgb(255, 255, 0);"
+			position="0 0.8 0">
+		</a-mixin>
+		<a-mixin
+			id="hotspot-target"
+			geometry="primitive: cone; radiusBottom: 0.01; radiusTop: 0.2; height: 0.75; segmentsRadial: 10; segmentsHeight: 1"
+			material="flatShading: true; color: rgb(255, 255, 0)">
+		</a-mixin>
+	</a-assets>
+	
+	<a-tour>
+		<!----- Panoramas ----->
+		
+		<a-panorama
+			id="p03"
+			src="./images/p03.jpg"
+			position="-10.07 0 0.87"
+			rotation="0 0 0">
+		</a-panorama>
+		
+		<a-panorama
+			id="p02"
+			src="./images/p02.jpg"
+			position="-3.27 0 -3.83"
+			rotation="0 0 0">
+		</a-panorama>
+		
+		<a-panorama
+			id="p04"
+			src="./images/p04.jpg"
+			position="-1.07 0 10.27"
+			rotation="0 0 0">
+		</a-panorama>
+		
+		<a-panorama
+			id="p05"
+			src="./images/p05.jpg"
+			position="-1.07 0 -16.23"
+			rotation="0 0 0">
+		</a-panorama>
+		
+		<a-panorama
+			id="p06"
+			src="./images/p06.jpg"
+			position="0.03 0 19.07"
+			rotation="0 0 0">
+		</a-panorama>
+		
+		<a-panorama
+			id="p07"
+			src="./images/p07.jpg"
+			position="0.03 0 21.57"
+			rotation="0 0 0">
+		</a-panorama>
+		
+		<a-panorama
+			id="p08"
+			src="./images/p08.jpg"
+			position="-11.27 0 -10.13"
+			rotation="0 0 0">
+		</a-panorama>
+		
+		<!----- Hotspots ----->
+		
+		<a-hotspot
+			class="link"
+			for="p05" to="p02"
+			mixin="hotspot-target"
+			position="-3.27 0 -3.83"
+			rotation="0 -90 0">
+			<a-text
+				value="P02"
+				align="center"
+				mixin="hotspot-text">
+			</a-text>
+		</a-hotspot>
+		
+		<a-hotspot
+			class="link"
+			for="p05" to="p03"
+			mixin="hotspot-target"
+			position="-10.07 0 0.87"
+			rotation="0 -90 0">
+			<a-text
+				value="P03"
+				align="center"
+				mixin="hotspot-text">
+			</a-text>
+		</a-hotspot>
+		
+		<a-hotspot
+			class="link"
+			for="p03" to="p04"
+			mixin="hotspot-target"
+			position="-1.07 0 10.27"
+			rotation="0 -90 0">
+			<a-text
+				value="P04"
+				align="center"
+				mixin="hotspot-text">
+			</a-text>
+		</a-hotspot>
+		
+		<a-hotspot
+			class="link"
+			for="p03" to="p05"
+			mixin="hotspot-target"
+			position="-1.07 0 -16.23"
+			rotation="0 -90 0">
+			<a-text
+				value="P05"
+				align="center"
+				mixin="hotspot-text">
+			</a-text>
+		</a-hotspot>
+		
+		<a-hotspot
+			class="link"
+			for="p03" to="p06"
+			mixin="hotspot-target"
+			position="0.03 0 19.07"
+			rotation="0 -90 0">
+			<a-text
+				value="P06"
+				align="center"
+				mixin="hotspot-text">
+			</a-text>
+		</a-hotspot>
+		
+		<a-hotspot
+			class="link"
+			for="p03" to="p07"
+			mixin="hotspot-target"
+			position="0.03 0 21.57"
+			rotation="0 -90 0">
+			<a-text
+				value="P07"
+				align="center"
+				mixin="hotspot-text">
+			</a-text>
+		</a-hotspot>
+		
+		<a-hotspot
+			class="link"
+			for="p03" to="p08"
+			mixin="hotspot-target"
+			position="-11.27 0 -10.13"
+			rotation="0 -90 0">
+			<a-text
+				value="P08"
+				align="center"
+				mixin="hotspot-text">
+			</a-text>
+		</a-hotspot>
+	</a-tour>
+	
+	<!----- Camera & cursor ----->
+	
+	<a-entity
+		camera="fov: 60"
+		look-controls="">
+		<a-cursor id="cursor"
+			cursor=""
+			geometry="primitive: ring; radiusInner: 0.02; radiusOuter: 0.03"
+			position="0 0 -1"
+			material="color: white; shader: flat"
+			raycaster="objects: .link"
+			animation__click="property: scale; startEvents: click; from: 0.1 0.1 0.1; to: 1 1 1; dur: 150"
+			animation__fusing="property: fusing; startEvents: fusing; from: 1 1 1; to: 0.1 0.1 0.1; dur: 1500"
+			event-set__1="_event: mouseenter; color: springgreen; scale: 0.5 0.5 1"
+			event-set__2="_event: mouseleave; color: white; scale: 1 1 1"
+			fuse="true"
+			fusing="0.09999999999999998 0.09999999999999998 0.09999999999999998 ">
+		</a-cursor>
+	</a-entity>
+</a-scene>
